@@ -26,4 +26,16 @@ public class AppTest {
     public void NumberFactor() {
         Assert.assertEquals("34",App.raindrop(34));
     }
+
+    @Test
+    @DisplayName("Out of Bounds | Number out of bounds")
+    public void OutOfBoundsZero(){
+        Assert.assertEquals("Number out of bounds", App.raindrop(0));
+    }
+
+    @Test
+    @DisplayName("Out of Bounds | Number out of bounds")
+    public void OutOfBoundsNegative(){
+        Assert.assertEquals("Number out of bounds", App.raindrop(-1));
+    }
 }

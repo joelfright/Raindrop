@@ -9,6 +9,10 @@ public class App {
     public static String raindrop(int num){
         String result = "";
 
+        if(num <= 0){
+            return "Number out of bounds";
+        }
+
         if(num % 3 == 0){
             result += "Pling";
         }
